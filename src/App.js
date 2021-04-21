@@ -4,6 +4,7 @@ import CountdownAnimation from './components/CountdownAnimation'
 import SetPomodoro from './components/SetPomodoro'
 import { SettingsContext } from './context/SettingsContext'
 
+
 const App = () => {
 
   const {
@@ -21,8 +22,9 @@ const App = () => {
 
   return (
     <div className="container">
+ 
       <h1>Pomodoro</h1>
-      <small>Be productive the right way.</small>
+      <small>Get your shit done.</small>
       {pomodoro !== 0 ?
       <>
         <ul className="labels">
@@ -48,7 +50,7 @@ const App = () => {
             />
           </li>
         </ul>
-        <Button title="Settings" _callback={SettingsBtn} />
+        <Button class="set-stuff"title="Settings" _callback={SettingsBtn} />
         <div className="timer-container">
           <div className="time-wrapper">
               <CountdownAnimation
